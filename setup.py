@@ -20,6 +20,6 @@ setup(
     license='MIT', 
     classifiers=classifiers,
     keywords='package sample', 
-    packages=find_packages(),
+    packages=find_packages(include=['krishanfirstpackage', 'krishanfirstpackage.*']),
     install_requires=[''] 
 )
