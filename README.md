@@ -19,3 +19,5 @@ This is some key points I want to point out:
    - `name` inside setup.py should be the folder name (like, example_pkg) which contains the source code. It is also the final package name.
 3. create dist using `python setup.py sdist bdist_wheel`. This will generate folders: `build`, `dist`, `xxxx.egg_info`. `wheel` and `zip` file are stored inside `dist` folder.
 4. use `twine check dist/*` to check the generated package.
+5. use **relative path('.', '..'')** to import module in scripts!!!
+6. each module should have a `__init__.py` file
